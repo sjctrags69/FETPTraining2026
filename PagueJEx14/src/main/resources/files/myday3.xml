@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c SYSTEM "myday.dtd">
+<c>
+	<b>First Entry</b>
+	<a>
+		<date>
+			<day>10</day>
+			<month>April</month>
+			<year>2026</year>
+		</date>
+		<date>
+			<day>11</day>
+			<month>April</month>
+		</date>
+	</a>
+	<b>Second Entry</b>
+	<a>
+		<date>
+			<day>1</day>
+			<month>May</month>
+			<year>2027</year>
+		</date>
+	</a>
+</c>
