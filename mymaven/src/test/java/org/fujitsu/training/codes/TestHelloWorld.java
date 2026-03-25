@@ -11,6 +11,7 @@ public class TestHelloWorld {
 	@BeforeEach
 	public void setup() {
 		hw = new HelloWorld();
+		System.out.println();
 	}
 	
 	@AfterEach
