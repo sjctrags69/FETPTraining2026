@@ -63,6 +63,7 @@ public class TestJAXBProcess {
 		Employees emps = new Employees();
 		emps.setEmployees(recs);
 		jb.createEmployeesXML(filename, emps);
+		System.out.println("Eyyy");
 	}
 	
 	/*
