@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employees>
+    <employees id="101">
+        <age>77</age>
+        <firstname>Juan</firstname>
+        <lastname>Luna</lastname>
+        <salary>50000.0</salary>
+    </employees>
+    <employees id="102">
+        <age>54</age>
+        <firstname>Maria</firstname>
+        <lastname>Clara</lastname>
+        <salary>30000.0</salary>
+    </employees>
+</employees>
