@@ -37,8 +37,8 @@ public class TestJAXBProcess {
 	@Test
 	public void testParseEmployeeXML() {
 		String filename = "./src/main/resources/files/employee.xml";
-		Employee rec = jb.parseXML(filename);
-		System.out.print(rec);
+		jb.parseXML(filename);
+		
 	}
 	
 	@Test
@@ -63,7 +63,7 @@ public class TestJAXBProcess {
 		Employees emps = new Employees();
 		emps.setEmployees(recs);
 		jb.createEmployeesXML(filename, emps);
-		System.out.println("Eyyy");
+		
 	}
 	
 	/*
