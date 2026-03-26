@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c SYSTEM "myday.dtd">
+
+<c>
+    <a>
+        <date>
+            <day>15</day>
+            <month>June</month>
+            <year>2020</year>
+        </date>
+        <date>
+            <day>20</day>
+            <month>July</month>
+        </date>
+    </a>
+
+    <b>Hello</b>
+
+    <a>
+        <date>
+            <day>5</day>
+            <month>May</month>
+        </date>
+    </a>
+</c>
