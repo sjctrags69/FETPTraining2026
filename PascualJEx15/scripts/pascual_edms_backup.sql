@@ -1,0 +1,162 @@
+--
+-- PostgreSQL database dump
+--
+
+\restrict QMJ6N4jTRuT61QqpBoOUUiVnXxxizzu111wnWMyilF94FjqJBP5SKN5KOlDjMqu
+
+-- Dumped from database version 18.1
+-- Dumped by pg_dump version 18.1
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: department; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.department (
+    dep_id integer NOT NULL,
+    dep_name character varying(20),
+    dep_location character varying(15)
+);
+
+
+ALTER TABLE public.department OWNER TO postgres;
+
+--
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    emp_id integer NOT NULL,
+    emp_name character varying(15),
+    job_name character varying(10),
+    manager_id integer,
+    hire_date date,
+    salary numeric(10,2),
+    commission numeric(7,2),
+    dep_id integer
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- Name: salary_grade; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.salary_grade (
+    grade integer NOT NULL,
+    min_sal integer,
+    max_sal integer
+);
+
+
+ALTER TABLE public.salary_grade OWNER TO postgres;
+
+--
+-- Data for Name: department; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.department (dep_id, dep_name, dep_location) FROM stdin;
+1001	FINANCE	SYDNEY
+2001	AUDIT	MELBOURNE
+3001	MARKETING	PERTH
+4001	PRODUCTION	BRISBANE
+\.
+
+
+--
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.employees (emp_id, emp_name, job_name, manager_id, hire_date, salary, commission, dep_id) FROM stdin;
+68319	KAYLING	PRESIDENT	\N	1991-11-18	6000.00	\N	1001
+66928	BLAZE	MANAGER	68319	1991-05-01	2750.00	\N	3001
+67832	CLARE	MANAGER	68319	1991-06-09	2550.00	\N	1001
+65646	JONAS	MANAGER	68319	1991-04-02	2957.00	\N	2001
+67858	SCARLET	ANALYST	65646	1997-04-19	3100.00	\N	2001
+69062	FRANK	ANALYST	65646	1991-12-03	3100.00	\N	2001
+63679	SANDRINE	CLERK	69062	1990-12-18	900.00	\N	2001
+64989	ADELYN	SALESMAN	66928	1991-02-20	1700.00	400.00	3001
+65271	WADE	SALESMAN	66928	1991-02-22	1350.00	600.00	3001
+66564	MADDEN	SALESMAN	66928	1991-09-28	1350.00	1500.00	3001
+68454	TUCKER	SALESMAN	66928	1991-09-08	1600.00	0.00	3001
+68736	ADNRES	CLERK	67858	1997-05-23	1200.00	\N	2001
+69000	JULIUS	CLERK	66928	1991-12-03	1050.00	\N	3001
+69324	MARKER	CLERK	67832	1992-01-23	1400.00	\N	1001
+\.
+
+
+--
+-- Data for Name: salary_grade; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.salary_grade (grade, min_sal, max_sal) FROM stdin;
+1	800	1300
+2	1301	1500
+3	1501	2100
+4	2101	3100
+5	3101	9999
+\.
+
+
+--
+-- Name: department pk_department; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.department
+    ADD CONSTRAINT pk_department PRIMARY KEY (dep_id);
+
+
+--
+-- Name: employees pk_employees; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.employees
+    ADD CONSTRAINT pk_employees PRIMARY KEY (emp_id);
+
+
+--
+-- Name: salary_grade pk_salary_grade; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.salary_grade
+    ADD CONSTRAINT pk_salary_grade PRIMARY KEY (grade);
+
+
+--
+-- Name: department uq_department_name; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.department
+    ADD CONSTRAINT uq_department_name UNIQUE (dep_name);
+
+
+--
+-- Name: employees uq_employees_name; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.employees
+    ADD CONSTRAINT uq_employees_name UNIQUE (emp_name);
+
+
+--
+-- PostgreSQL database dump complete
+--
+
+\unrestrict QMJ6N4jTRuT61QqpBoOUUiVnXxxizzu111wnWMyilF94FjqJBP5SKN5KOlDjMqu
+
