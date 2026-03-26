@@ -6,7 +6,6 @@ import jakarta.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name = "book")
 public class Book {
-
 	private String id;
 	private String title;
 	private String editor;
