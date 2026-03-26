@@ -1,0 +1,315 @@
+-- Database Setup and Connection
+postgres=# create database edms;
+CREATE DATABASE
+postgres=# \c edms
+Password:
+
+You are now connected to database "edms" as user "postgres".
+
+-- ---------------------------------------------------------
+-- 1. Create the tables and insert the initial records
+-- ---------------------------------------------------------
+edms=# create table employees;
+ERROR:  syntax error at or near ";"
+LINE 1: create table employees;
+                              ^
+edms=# create table employees(
+edms(# emp_id integer not null primary key,
+edms(# emp_name varchar(15) not null,
+edms(# job_name varchar(10) not null,
+edms(# manager_id integer,
+edms(# hire_date date not null,
+edms(# salary decimal(10,2) not null,
+edms(# commission decimal(7,2),
+edms(# dep_id integer not null,
+edms(# constraint fk_department foreign key(dep_id) references department(dep_id),
+edms(# constraint fk_manager foreign key(manager_id) references employees(emp_id));
+ERROR:  relation "department" does not exist
+edms=# create table employees(
+edms(# emp_id integer not null primary key,
+edms(# emp_name varchar(15) not null,
+edms(# job_name varchar(10) not null,
+edms(# manager_id integer,
+edms(# hire_date date not null,
+edms(# salary decimal(10,2) not null,
+edms(# commission decimal(7,2),
+edms(# dep_id integer not null);
+CREATE TABLE
+edms=# create table department (
+edms(# dep_id integer not null primary key,
+edms(# dep_name varchar(20) not null,
+edms(# dep_location varchar(15) not null);
+CREATE TABLE
+edms=# create table salary_grade (
+edms(# grade integer not null primary key,
+edms(# min_salary integer not null,
+edms(# max_salary integer not null);
+CREATE TABLE
+edms=# insert into department (dep_id, dep_name, dep_location) values
+edms-# insert into department (dep_id, dep_name, dep_location)
+edms-# values(1001, 'finance', 'sydney'),
+edms-# (2001, 'audit', 'melbourne'),
+edms-# (3001, 'marketing', 'perth'),
+edms-# (4001, 'production', 'brisbane');
+ERROR:  syntax error at or near "insert"
+LINE 2: insert into department (dep_id, dep_name, dep_location)
+        ^
+edms=# insert into department (dep_id, dep_name, dep_location) values
+edms-# (1001, 'finance', 'sydney'),
+edms-# (3001, 'marketing', 'perth'),
+edms-# asdasdasdasdasdasdasd
+edms-# ;)
+ERROR:  syntax error at or near "asdasdasdasdasdasdasd"
+LINE 4: asdasdasdasdasdasdasd
+        ^
+edms-# insert into department (dep_id, dep_name, dep_location) values
+edms-# (1001, 'finance', 'sydney'),
+edms-# (2001, 'audit', 'melbourne'),
+edms-# (3001, 'marketing', 'perth'),
+edms-# (4001, 'production', 'brisbane');
+ERROR:  syntax error at or near ")"
+LINE 1: )
+        ^
+edms=# insert into department (dep_id, dep_name, dep_location) values
+edms-# (1001, 'finance', 'sydney'),
+edms-# (2001, 'audit', 'melbourne'),
+edms-# (3001, 'marketing', 'perth'),
+edms-# (4001, 'production', 'brisbane');
+INSERT 0 4
+
+-- Verifying department table data
+edms=# select * from department;
+ dep_id |  dep_name  | dep_location
+--------+------------+--------------
+   1001 | finance    | sydney
+   2001 | audit      | melbourne
+   3001 | marketing  | perth
+   4001 | production | brisbane
+(4 rows)
+
+
+edms=# insert into salary_grade (grade, min_salary, max_salary) values
+edms-# (1, 800, 1300),
+edms-# (2, 1301, 1500),
+edms-# (3, 1501, 2100),
+edms-# (4, 2101, 3100),
+edms-# (5, 3101, 9999);
+INSERT 0 5
+
+-- Verifying salary_grade table data
+edms=# select * from salary_grade;
+ grade | min_salary | max_salary
+-------+------------+------------
+     1 |        800 |       1300
+     2 |       1301 |       1500
+     3 |       1501 |       2100
+     4 |       2101 |       3100
+     5 |       3101 |       9999
+(5 rows)
+
+
+edms=# insert into employees (emp_id, emp_name, job_name, manager_id, hire_date, salary, commission, dep_id) values
+edms-# (68319, 'kayling', 'president', null, '1991-11-18', 6000.00, null, 1001),
+edms-# (66928, 'blaze',   'manager',   68319,'1991-05-01',2750.00,null,3001),
+edms-# (67832, 'clare', 'manager', 68319, '1991-06-09', 2550.00, null, 1001),
+edms-# (65646, 'jonas', 'manager', 68319, '1991-04-02', 2957.00, null, 2001),
+edms-# (67858, 'scarlet', 'analyst', 65646, '1997-04-19', 3100.00, null, 2001),
+edms-# (69062, 'frank', 'analyst', 65646, '1991-12-03', 3100.00, null, 2001),
+edms-# (63679, 'sandrine', 'clerk', 69062, '1990-12-18', 900.00, null, 2001),
+edms-# (64989, 'adelyn', 'salesman', 66928, '1991-02-20', 1700.00, 400.00, 3001),
+edms-# (65271, 'wade', 'salesman', 66928, '1991-02-22', 1350.00, 600.00, 3001),
+edms-# (66564, 'madden', 'salesman', 66928, '1991-09-28', 1350.00, 1500.00, 3001),
+edms-# (68454, 'tucker', 'salesman', 66928, '1991-09-08', 1600.00, 0.00, 3001),
+edms-# (68736, 'adnres', 'clerk', 67858, '1997-05-23', 1200.00, null, 2001),
+edms-# (69000, 'julius', 'clerk', 66928, '1991-12-03', 1050.00, null, 3001),
+edms-# (69324, 'marker', 'clerk', 67832, '1992-01-23', 1400.00, null, 1001);
+INSERT 0 14
+
+-- Verifying employees table data
+edms=# select * from employees;
+ emp_id | emp_name | job_name  | manager_id | hire_date  | salary  | commission | dep_id
+--------+----------+-----------+------------+------------+---------+------------+--------
+  68319 | kayling  | president |            | 1991-11-18 | 6000.00 |            |   1001
+  66928 | blaze    | manager   |      68319 | 1991-05-01 | 2750.00 |            |   3001
+  67832 | clare    | manager   |      68319 | 1991-06-09 | 2550.00 |            |   1001
+  65646 | jonas    | manager   |      68319 | 1991-04-02 | 2957.00 |            |   2001
+  67858 | scarlet  | analyst   |      65646 | 1997-04-19 | 3100.00 |            |   2001
+  69062 | frank    | analyst   |      65646 | 1991-12-03 | 3100.00 |            |   2001
+  63679 | sandrine | clerk     |      69062 | 1990-12-18 |  900.00 |            |   2001
+  64989 | adelyn   | salesman  |      66928 | 1991-02-20 | 1700.00 |     400.00 |   3001
+  65271 | wade     | salesman  |      66928 | 1991-02-22 | 1350.00 |     600.00 |   3001
+  66564 | madden   | salesman  |      66928 | 1991-09-28 | 1350.00 |    1500.00 |   3001
+  68454 | tucker   | salesman  |      66928 | 1991-09-08 | 1600.00 |       0.00 |   3001
+  68736 | adnres   | clerk     |      67858 | 1997-05-23 | 1200.00 |            |   2001
+  69000 | julius   | clerk     |      66928 | 1991-12-03 | 1050.00 |            |   3001
+  69324 | marker   | clerk     |      67832 | 1992-01-23 | 1400.00 |            |   1001
+(14 rows)
+
+
+-- ---------------------------------------------------------
+-- 2. What are the names of managers that have a salary between 1500 and 2500?
+-- ---------------------------------------------------------
+edms=# select emp_name
+edms-# from employees
+edms-# where job_name = 'manager'
+edms-# and salary between 1500 and 2500;
+ emp_name
+----------
+(0 rows)
+
+-- ---------------------------------------------------------
+-- 3. What are the names of the employees that work in Sydney?
+-- ---------------------------------------------------------
+edms=# select e.emp_name
+edms-# from employees e
+edms-# join department d on e.dep_id = d.dep_id
+edms-# where d.dep_location = 'sydney';
+ emp_name
+----------
+ kayling
+ clare
+ marker
+(3 rows)
+
+-- ---------------------------------------------------------
+-- 4. Which salesmen earn a salary of grade 2?
+-- ---------------------------------------------------------
+edms=# select e.emp_name
+edms-# from employees e
+edms-# join salary_grade s on e.salary between s.min_salary and s.max_salary
+edms-# where e.job_name = 'salesman'
+edms-# and s.grade = 2;
+ emp_name
+----------
+ wade
+ madden
+(2 rows)
+
+-- ---------------------------------------------------------
+-- 5. What is the salary grade of each employee? (Sort the output according to the salary grades.)
+-- ---------------------------------------------------------
+edms=# select e.emp_name, s.grade
+edms-# from employees e
+edms-# join salary_grade s on e.salary between s.min_salary and s.max_salary
+edms-# order by s.grade;
+ emp_name | grade
+----------+-------
+ sandrine |     1
+ adnres   |     1
+ julius   |     1
+ wade     |     2
+ madden   |     2
+ marker   |     2
+ adelyn   |     3
+ tucker   |     3
+ blaze    |     4
+ clare    |     4
+ jonas    |     4
+ scarlet  |     4
+ frank    |     4
+ kayling  |     5
+(14 rows)
+
+-- ---------------------------------------------------------
+-- 6. Which are the departments that are located in Melbourne?
+-- ---------------------------------------------------------
+edms=# select dep_name
+edms-# from department
+edms-# where dep_location = 'melbourne';
+ dep_name
+----------
+ audit
+(1 row)
+
+-- ---------------------------------------------------------
+-- 7. Write a query in SQL to produce the output of employees name and job name in a format: "Employee & Job"
+-- ---------------------------------------------------------
+edms=# select emp_name || ' & ' || job_name as "employee & job"
+edms-# from employees;
+   employee & job
+---------------------
+ kayling & president
+ blaze & manager
+ clare & manager
+ jonas & manager
+ scarlet & analyst
+ frank & analyst
+ sandrine & clerk
+ adelyn & salesman
+ wade & salesman
+ madden & salesman
+ tucker & salesman
+ adnres & clerk
+ julius & clerk
+ marker & clerk
+(14 rows)
+
+-- ---------------------------------------------------------
+-- 8. Write a query in SQL to list the employees who joined in the month January.
+-- ---------------------------------------------------------
+edms=# select emp_name
+edms-# from employees
+edms-# where extract(month from hire_date) = 1;
+ emp_name
+----------
+ marker
+(1 row)
+
+-- ---------------------------------------------------------
+-- 9. Write a query in SQL to list the hired date, job, and employee name who joined the company before 1992-12-31
+-- ---------------------------------------------------------
+edms=# select hire_date, job_name, emp_name
+edms-# from employees
+edms-# where hire_date < '1992-12-31';
+ hire_date  | job_name  | emp_name
+------------+-----------+----------
+ 1991-11-18 | president | kayling
+ 1991-05-01 | manager   | blaze
+ 1991-06-09 | manager   | clare
+ 1991-04-02 | manager   | jonas
+ 1991-12-03 | analyst   | frank
+ 1990-12-18 | clerk     | sandrine
+ 1991-02-20 | salesman  | adelyn
+ 1991-02-22 | salesman  | wade
+ 1991-09-28 | salesman  | madden
+ 1991-09-08 | salesman  | tucker
+ 1991-12-03 | clerk     | julius
+ 1992-01-23 | clerk     | marker
+(12 rows)
+
+-- ---------------------------------------------------------
+-- 10. Write a query in SQL to list the id, name, and salary with an experience over 10 years
+-- ---------------------------------------------------------
+edms=# select emp_id, emp_name, salary
+edms-# from employees
+edms-# where extract(year from age(current_date, hire_date)) > 10;
+ emp_id | emp_name | salary
+--------+----------+---------
+  68319 | kayling  | 6000.00
+  66928 | blaze    | 2750.00
+  67832 | clare    | 2550.00
+  65646 | jonas    | 2957.00
+  67858 | scarlet  | 3100.00
+  69062 | frank    | 3100.00
+  63679 | sandrine |  900.00
+  64989 | adelyn   | 1700.00
+  65271 | wade     | 1350.00
+  66564 | madden   | 1350.00
+  68454 | tucker   | 1600.00
+  68736 | adnres   | 1200.00
+  69000 | julius   | 1050.00
+  69324 | marker   | 1400.00
+(14 rows)
+
+-- ---------------------------------------------------------
+-- 11. Write a query in SQL to list the employees whose names containing the character set 'AR' together
+-- ---------------------------------------------------------
+edms=# select emp_name
+edms-# from employees
+edms-# where emp_name like '%ar%';
+ emp_name
+----------
+ clare
+ scarlet
+ marker
+(3 rows)
