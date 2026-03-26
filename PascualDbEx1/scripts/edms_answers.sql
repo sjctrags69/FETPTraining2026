@@ -79,7 +79,6 @@ WHERE job_name = 'MANAGER'
 
 -- ============================================================
 --Q3
-
 SELECT emp_name
 FROM employees
 WHERE dep_id = (
@@ -93,7 +92,6 @@ WHERE dep_id = (
 
 -- ============================================================
 -- Q4
-
 SELECT emp_name, salary
 FROM employees
 WHERE job_name = 'SALESMAN'
@@ -140,7 +138,6 @@ ORDER BY salary_grade;
 
 -- ============================================================
 -- Q6
-
 SELECT dep_name
 FROM department
 WHERE dep_location = 'MELBOURNE';
@@ -148,20 +145,21 @@ WHERE dep_location = 'MELBOURNE';
 --    AUDIT
 -- ============================================================
 
+--7.
 SELECT emp_name || ' & ' || job_name AS "Employee & Job"
 FROM employees;
 
-
+--8.
 SELECT emp_name, hire_date
 FROM employees
 WHERE EXTRACT(MONTH FROM hire_date) = 1;
 
-
+--9.
 SELECT hire_date, job_name, emp_name
 FROM employees
 WHERE hire_date < '1992-12-31';
 
-
+--10.
 SELECT emp_id,
        emp_name,
        salary,
@@ -169,7 +167,7 @@ SELECT emp_id,
 FROM employees
 WHERE EXTRACT(YEAR FROM AGE(hire_date)) > 10;
 
-
+--11.
 SELECT emp_name
 FROM employees
 WHERE emp_name LIKE '%AR%';
