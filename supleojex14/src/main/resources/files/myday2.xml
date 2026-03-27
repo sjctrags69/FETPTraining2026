@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c SYSTEM "day.dtd">
+<c>
+    <a/>
+    <a>
+        <date>
+            <day>15</day>
+            <month>May</month>
+            <year>2027</year>
+        </date>
+    </a>
+</c>

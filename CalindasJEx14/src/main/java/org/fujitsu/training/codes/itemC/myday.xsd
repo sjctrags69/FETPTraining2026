@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- date -->
+    <xs:element name="date">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="day" type="xs:string"/>
+                <xs:element name="month" type="xs:string"/>
+                <xs:element name="year" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- a -->
+    <xs:element name="a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="date" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- b -->
+    <xs:element name="b" type="xs:string"/>
+
+    <!-- c -->
+    <xs:element name="c">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="b" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="a" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.org/myday"
+    xmlns:tns="http://www.example.org/myday"
+    elementFormDefault="qualified">
+
+    <xs:element name="day" type="xs:string"/>
+    <xs:element name="month" type="xs:string"/>
+    <xs:element name="year" type="xs:string"/>
+
+    <xs:element name="date">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:day"/>
+                <xs:element ref="tns:month"/>
+                <xs:element ref="tns:year" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:date" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="b" type="xs:string"/>
+
+    <xs:element name="c">
+	    <xs:complexType>
+	        <xs:sequence>
+	            <xs:element ref="tns:b" minOccurs="0" maxOccurs="unbounded"/>
+	            <xs:element ref="tns:a" minOccurs="0" maxOccurs="unbounded"/>
+	        </xs:sequence>
+	    </xs:complexType>
+	</xs:element>
+    
+</xs:schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE a SYSTEM "myday.dtd">
+<a>
+  <date>
+    <day>26</day>
+    <month>March</month>
+    <year>2026</year>
+  </date>
+  <date>
+    <day>1</day>
+    <month>April</month>
+  </date>
+</a>

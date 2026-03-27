@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT c (b+|(b?,a)*)>
+<!ELEMENT b (#PCDATA)>
+<!ELEMENT a (date*)>
+<!ELEMENT date (day,month,year?)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT month (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
