@@ -27,7 +27,9 @@ create table employees (
 	hire_date date not null,
 	salary decimal(10,2) not null,
 	commission decimal(7,2),
-	dep_id integer not null
+	dep_id integer not null,
+	foreign key (manager_id) references employees(emp_id),
+	foreign key (dep_id) references department(dep_id)
 );
 
 insert into department (dep_id, dep_name, dep_location) values
