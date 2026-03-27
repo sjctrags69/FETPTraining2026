@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="date">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="day"/>
+                <xs:element ref="month"/>
+                <xs:element ref="year" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="day"   type="xs:string"/>
+    <xs:element name="month" type="xs:string"/>
+    <xs:element name="year"  type="xs:string"/>
+
+    <xs:element name="a">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="date" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="b" type="xs:string"/>
+
+    <xs:element name="c">
+        <xs:complexType>
+            <xs:choice>
+                <!-- branch 1: b+ -->
+                <xs:element ref="b" maxOccurs="unbounded"/>
+                <!-- branch 2: (b?,a)* -->
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="b" minOccurs="0"/>
+                    <xs:element ref="a"/>
+                </xs:sequence>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
