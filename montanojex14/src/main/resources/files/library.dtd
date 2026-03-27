@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT library (book | journal | misc)*>
+<!ELEMENT book (title?, editor?, publisher?)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT editor (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT journal (title, volume?, publisher?)>
+<!ELEMENT volume (#PCDATA | number)*>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT misc (author*, pages, title?, year?)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT pages (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+
+
+<!ATTLIST book id CDATA "">
+<!ATTLIST journal id CDATA "">
+<!ATTLIST journal publ_year CDATA "">
+<!ATTLIST misc diplId CDATA #IMPLIED>
+<!ATTLIST misc trId CDATA #IMPLIED>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<salesRecords>
+  <salesRecord><lastName>Smith</lastName><sales>$16,753.00</sales><country>UK</country><quarter>Qtr 3</quarter></salesRecord>
+  <salesRecord><lastName>Johnson</lastName><sales>$14,808.00</sales><country>USA</country><quarter>Qtr 4</quarter></salesRecord>
+  <salesRecord><lastName>Williams</lastName><sales>$10,644.00</sales><country>UK</country><quarter>Qtr 2</quarter></salesRecord>
+  <salesRecord><lastName>Jones</lastName><sales>$1,390.00</sales><country>USA</country><quarter>Qtr 3</quarter></salesRecord>
+  <salesRecord><lastName>Brown</lastName><sales>$4,865.00</sales><country>USA</country><quarter>Qtr 4</quarter></salesRecord>
+  <salesRecord><lastName>Williams</lastName><sales>$12,438.00</sales><country>UK</country><quarter>Qtr 1</quarter></salesRecord>
+  <salesRecord><lastName>Johnson</lastName><sales>$9,339.00</sales><country>UK</country><quarter>Qtr 2</quarter></salesRecord>
+  <salesRecord><lastName>Smith</lastName><sales>$18,919.00</sales><country>USA</country><quarter>Qtr 3</quarter></salesRecord>
+  <salesRecord><lastName>Jones</lastName><sales>$9,213.00</sales><country>USA</country><quarter>Qtr 4</quarter></salesRecord>
+  <salesRecord><lastName>Jones</lastName><sales>$7,433.00</sales><country>UK</country><quarter>Qtr 1</quarter></salesRecord>
+  <salesRecord><lastName>Brown</lastName><sales>$3,255.00</sales><country>USA</country><quarter>Qtr 2</quarter></salesRecord>
+  <salesRecord><lastName>Williams</lastName><sales>$14,867.00</sales><country>USA</country><quarter>Qtr 3</quarter></salesRecord>
+  <salesRecord><lastName>Williams</lastName><sales>$19,302.00</sales><country>UK</country><quarter>Qtr 4</quarter></salesRecord>
+  <salesRecord><lastName>Smith</lastName><sales>$9,698.00</sales><country>USA</country><quarter>Qtr 1</quarter></salesRecord>
+</salesRecords>

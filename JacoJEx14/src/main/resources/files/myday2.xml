@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE a SYSTEM "myday.dtd">
+<a>
+    <date>
+        <day>1</day>
+        <month>January</month>
+        <year>2024</year>
+    </date>
+    <date>
+        <day>25</day>
+        <month>December</month>
+        <year>2024</year>
+    </date>
+</a>

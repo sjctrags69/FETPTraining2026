@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE c SYSTEM "day.dtd"> -->
+<c xmlns="http://www.example.org/myday"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.example.org/myday myday.xsd">
+    <b>Alpha</b>
+    <b>Beta</b>
+    <b>Gamma</b>
+</c>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE c SYSTEM "myday.dtd"> -->
+<c xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.fetp.org/employees"
+	xmlns:tns="http://www.fetp.org/employees" 	
+	elementFormDefault="qualified">
+	<!-- c  b+  -->
+	<b>date1</b>
+	<b>date2</b>
+	<b>date3</b>
+</c>

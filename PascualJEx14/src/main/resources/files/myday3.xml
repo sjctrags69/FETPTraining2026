@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE c SYSTEM "myday.dtd"> -->
+
+<!-- c  (b?,a)* -->
+<c xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://www.fetp.org/employees"
+	xmlns:tns="http://www.fetp.org/employees" 	
+	elementFormDefault="qualified">   
+	<b>date1</b>
+	<!-- a (date*)  -->
+	<a>
+		<date>
+			<day>27</day>
+			<month>04</month>
+			<year>2026</year>
+		</date>
+	</a>
+	<a>
+		<date>
+			<day>28</day>
+			<month>05</month>
+		</date>
+	</a>
+</c>

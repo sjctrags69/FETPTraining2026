@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE a SYSTEM "myday.dtd"> -->
+<a xmlns="http://www.fetp.org/myday"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.fetp.org/myday myday.xsd">
+	<date>
+		<day>12</day>
+		<month>12</month>
+		<year>2027</year>
+	</date>
+	<date>
+		<day>13</day>
+		<month>11</month>
+		<year>2026</year>
+	</date>
+</a>

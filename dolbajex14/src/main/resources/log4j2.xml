@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Appenders>
+		<Console name="ConsoleAppender" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n" />
+		</Console>
+		<File name="ItemBFileAppender" fileName="${sys:user.dir}/src/main/resources/files/itemB.log" append="true">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n" />
+		</File>
+		<File name="ItemCFileAppender" fileName="${sys:user.dir}/src/main/resources/files/itemC.log" append="true">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n" />
+		</File>
+		<File name="ItemDFileAppender" fileName="${sys:user.dir}/src/main/resources/files/itemD.log" append="true">
+			<PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger - %msg%n" />
+		</File>
+	</Appenders>
+	<Loggers>
+		<Logger name="org.fujitsu.training.codes.itemB" level="info" additivity="false">
+			<AppenderRef ref="ConsoleAppender" />
+			<AppenderRef ref="ItemBFileAppender" />
+		</Logger>
+		<Logger name="org.fujitsu.training.codes.itemC" level="info" additivity="false">
+			<AppenderRef ref="ConsoleAppender" />
+			<AppenderRef ref="ItemCFileAppender" />
+		</Logger>
+		<Logger name="org.fujitsu.training.codes.itemD" level="info" additivity="false">
+			<AppenderRef ref="ConsoleAppender" />
+			<AppenderRef ref="ItemDFileAppender" />
+		</Logger>
+		<Root level="info">
+			<AppenderRef ref="ConsoleAppender" />
+		</Root>
+	</Loggers>
+</Configuration>

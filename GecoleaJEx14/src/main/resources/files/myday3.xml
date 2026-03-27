@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c SYSTEM "myday.dtd">
+
+<c>
+    <b>First</b>
+    <a>
+        <date>
+            <day>1</day>
+            <month>January</month>
+        </date>
+    </a>
+
+    <a>
+        <date>
+            <day>14</day>
+            <month>February</month>
+            <year>2025</year>
+        </date>
+    </a>
+</c>

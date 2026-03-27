@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE c SYSTEM "myday.dtd">
+<c>
+	<b>Schedule</b>
+	<a>
+		<date>
+			<day>25</day>
+			<month>March</month>
+			<year>2026</year>
+		</date>
+	</a>
+</c>

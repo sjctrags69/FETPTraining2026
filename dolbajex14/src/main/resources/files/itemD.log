@@ -1,0 +1,149 @@
+
+2026-03-26 09:05:03.919 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Setup TestItemD
+2026-03-26 09:05:03.929 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Run sunnyDayCreateSalesXmlFile
+2026-03-26 09:05:03.930 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Build sales records in test
+2026-03-26 09:05:03.935 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 16753.0 to $16,753.00
+2026-03-26 09:05:03.935 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14808.0 to $14,808.00
+2026-03-26 09:05:03.935 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 10644.0 to $10,644.00
+2026-03-26 09:05:03.935 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 1390.0 to $1,390.00
+2026-03-26 09:05:03.936 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 4865.0 to $4,865.00
+2026-03-26 09:05:03.936 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 12438.0 to $12,438.00
+2026-03-26 09:05:03.936 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9339.0 to $9,339.00
+2026-03-26 09:05:03.936 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 18919.0 to $18,919.00
+2026-03-26 09:05:03.936 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9213.0 to $9,213.00
+2026-03-26 09:05:03.937 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 7433.0 to $7,433.00
+2026-03-26 09:05:03.937 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 3255.0 to $3,255.00
+2026-03-26 09:05:03.937 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14867.0 to $14,867.00
+2026-03-26 09:05:03.938 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 19302.0 to $19,302.00
+2026-03-26 09:05:03.938 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9698.0 to $9,698.00
+2026-03-26 09:05:03.938 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Create sales xml sales-generated.xml
+2026-03-26 09:05:04.058 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Use resource file src\main\resources\files\sales-generated.xml
+2026-03-26 09:05:04.106 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Created sales xml with 14 records
+2026-03-26 09:05:04.114 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Teardown TestItemD
+2026-03-26 09:05:04.127 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Setup TestItemD
+2026-03-26 09:05:04.127 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Run sunnyDayCreateSalesXmlWithCurrencyFormat
+2026-03-26 09:05:04.128 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Build sales records in test
+2026-03-26 09:05:04.128 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 16753.0 to $16,753.00
+2026-03-26 09:05:04.128 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14808.0 to $14,808.00
+2026-03-26 09:05:04.128 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 10644.0 to $10,644.00
+2026-03-26 09:05:04.128 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 1390.0 to $1,390.00
+2026-03-26 09:05:04.129 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 4865.0 to $4,865.00
+2026-03-26 09:05:04.130 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 12438.0 to $12,438.00
+2026-03-26 09:05:04.130 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9339.0 to $9,339.00
+2026-03-26 09:05:04.130 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 18919.0 to $18,919.00
+2026-03-26 09:05:04.130 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9213.0 to $9,213.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 7433.0 to $7,433.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 3255.0 to $3,255.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14867.0 to $14,867.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 19302.0 to $19,302.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9698.0 to $9,698.00
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Create sales xml sales-generated-check.xml
+2026-03-26 09:05:04.131 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Use resource file src\main\resources\files\sales-generated-check.xml
+2026-03-26 09:05:04.134 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Created sales xml with 14 records
+2026-03-26 09:05:04.136 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Teardown TestItemD
+2026-03-26 09:05:04.138 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Setup TestItemD
+2026-03-26 09:05:04.138 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Run rainyDayCreateSalesXmlInvalidFilename
+2026-03-26 09:05:04.138 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Build sales records in test
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 16753.0 to $16,753.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14808.0 to $14,808.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 10644.0 to $10,644.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 1390.0 to $1,390.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 4865.0 to $4,865.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 12438.0 to $12,438.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9339.0 to $9,339.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 18919.0 to $18,919.00
+2026-03-26 09:05:04.139 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9213.0 to $9,213.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 7433.0 to $7,433.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 3255.0 to $3,255.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 14867.0 to $14,867.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 19302.0 to $19,302.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Formatted sales 9698.0 to $9,698.00
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Create sales xml sales?.xml
+2026-03-26 09:05:04.140 [main] INFO  org.fujitsu.training.codes.itemD.JacksonMapper - Use resource file src\main\resources\files\sales?.xml
+2026-03-26 09:05:04.141 [main] ERROR org.fujitsu.training.codes.itemD.JacksonMapper - IO error while creating sales xml
+java.io.FileNotFoundException: src\main\resources\files\sales?.xml (The filename, directory name, or volume label syntax is incorrect)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:255)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:210)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:171)
+	at com.fasterxml.jackson.core.TokenStreamFactory._fileOutputStream(TokenStreamFactory.java:344)
+	at com.fasterxml.jackson.core.JsonFactory.createGenerator(JsonFactory.java:1574)
+	at com.fasterxml.jackson.databind.ObjectWriter.createGenerator(ObjectWriter.java:764)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1081)
+	at org.fujitsu.training.codes.itemD.JacksonMapper.createSalesXML(JacksonMapper.java:21)
+	at org.fujitsu.training.codes.itemD.test.TestItemD.rainyDayCreateSalesXmlInvalidFilename(TestItemD.java:89)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:786)
+	at org.junit.platform.commons.support.ReflectionSupport.invokeMethod(ReflectionSupport.java:514)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:161)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:152)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:91)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:112)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:94)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:87)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$4(TestMethodTestDescriptor.java:221)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:217)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:159)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:70)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:157)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:147)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:145)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:161)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:147)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:145)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:101)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:161)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:147)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:145)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:101)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:230)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:204)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:172)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:101)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:64)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:150)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:63)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:109)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:100)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:47)
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25)
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:46)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:52)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:73)
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:100)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:520)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:748)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:443)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:211)
+2026-03-26 09:05:04.153 [main] INFO  org.fujitsu.training.codes.itemD.test.TestItemD - Teardown TestItemD

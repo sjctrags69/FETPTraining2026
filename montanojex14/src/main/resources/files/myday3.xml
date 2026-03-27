@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE c SYSTEM "myday.dtd">-->
+<c xmlns="http://www.fetp.org/myday"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.fetp.org/myday myday.xsd">
+	<b>Wednesday</b>
+	<a>
+		<date>
+			<day>14</day>
+			<month>9</month>
+			<year>2027</year>
+		</date>
+	</a>
+	<b>Thursday</b>
+	<a>
+		<date>
+			<day>14</day>
+			<month>9</month>
+			<year>2027</year>
+		</date>
+	</a>
+</c>
